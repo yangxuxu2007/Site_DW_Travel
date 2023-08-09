@@ -1,13 +1,235 @@
-* {
-    background-color: darkslategray;
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#eee;
 }
 
-p {
-    color: rgb(0, 0, 0);
-    text-align: justify;
+a {
+  text-decoration: none;
 }
 
-#pik {
-    width: 50%;
-    height: 35%;
+#titulo {
+  font-size: 50px;
+  text-align: center;
+}
+
+header {
+  background-color: #00a8e8;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #00a8e8;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Efeito de escala ao passar o mouse */
+
+.image-container {
+  margin-top: 50px;
+}
+
+.clickable-image {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  width: 21%;
+  height: 30%;
+  margin-left: 9.25%;
+}
+
+.clickable-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.clickable-image:hover img {
+  transform: scale(1.2); /* Aumenta a escala em 20% ao passar o mouse */
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.clickable-image:hover .image-text {
+  opacity: 1;
+}
+
+.caption-image {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.preco {
+  font-weight: none;
+  color: green;
+}
+
+#selecao_de_destino {
+  color: black;
+  background-color:#eee;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+  height: 50px;
+  width: 180px;
+  border-radius: 5px;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 13%;
+}
+
+#selecao_de_destino_2 {
+  color: black;
+  background-color: #eee;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+  height: 45px;
+  width: 175px;
+  border-radius: 5px;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 13%;
+}
+
+.words {
+  position: relative;
+  padding: 20px; /* Adicione algum espaço ao redor do texto */
+  font-size: 20px;
+  text-align: justify;
+}
+
+#corsa {
+  padding: 18px;
+}
+
+#com {
+  padding-left: 6%;
+  font-size: 18px;
+}
+
+.imagem-com-descricao {
+  display: flex;
+  align-items: center;
+}
+
+.descricao {
+  margin-left: 20px;
+}
+
+#palmeiras {
+  padding: 3%;
+  height: 35%;
+  width: 30%;
+}
+
+#img_description {
+  text-align: justify;
+  padding-right: 25px;
+  font-size: 20px;
+}
+
+#corinthia {
+  text-align: justify;
+  padding-right: 25px;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.btn.btn-1 {
+  background: #6a8492;
+  color: #fff;
+  border-radius: 7%;
+  border-style: hidden;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px; /* Adicionei um padding para dar espaço interno ao botão */
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  margin-left: 13%;
+}
+
+.btn.btn-1:hover {
+  background: #1772a3;
+  border-radius: 3%;
+  margin-left: 13%;
+}
+
+#samuel {
+  margin-left: 13%;
+}
+
+#comprovs {
+  border: 5px;
+  border-color: #444444;
+  border-style:double;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#flaflu {
+  position: relative;
+  height: 80vh;
+}
+
+#flamengo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner_titulo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    z-index: 1;
+    color: #000000;
+    margin-left: 35px;
+    font-size: 50px;
+  }
+
+#vi {
+  margin-left: 10px;
+}
+
+#pi {
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
 }
